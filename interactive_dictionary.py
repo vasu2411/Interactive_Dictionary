@@ -8,6 +8,8 @@ word = input('Enter word: ')
 
 #function to return meaning of the word from data
 def getMeaning(w):
+    #for case sensitivity
+    w = w.lower()
     #if-else to check word exist in our data or not
     if w in data:
         return data[w]
